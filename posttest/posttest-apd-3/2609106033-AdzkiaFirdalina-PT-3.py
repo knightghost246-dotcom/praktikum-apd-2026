@@ -45,7 +45,7 @@ if nama_input == NAMA_PANGGILAN and NIM == NIM:
         diskon_pembelian = persen_diskon * total_harga
 
         # Status member
-        member = input("Apakah pembeli member? (y/n): ").lower()
+        member = input("Apakah Anda punya member? (y/n): ").lower()
 
         if member == "y" or member == "ya":
             status_member = "Member"
@@ -64,7 +64,7 @@ if nama_input == NAMA_PANGGILAN and NIM == NIM:
         print(f"{'Nama Pembeli':<22}: {nama_input}")
         print(f"{'NIM':<22}: {NIM}")
         print(f"{'Jenis BBM':<22}: {jenis_bbm}")
-        print(f"{'Harga/Liter':<22}: Rp {harga_per_liter:,.0f}".replace(",", "."))
+        print(f"{'Harga Per Liter':<22}: Rp {harga_per_liter:,.0f}".replace(",", "."))
         print(f"{'Jumlah Liter':<22}: {liter:.2f} Liter")
         print(f"{'Total Harga':<22}: Rp {total_harga:,.0f}".replace(",", "."))
         print(f"{'Diskon Pembelian':<22}: Rp {diskon_pembelian:,.0f} ({persen_diskon * 100:.0f}%)".replace(",", "."))
